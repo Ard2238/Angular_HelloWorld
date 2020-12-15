@@ -3,8 +3,9 @@
   <h1>{{this.title}}{{1+1}}</h1>
 
   <!--Property of the html is bound to the element "imgUrl"-->
-  <!--Property Binding-->
-  <img [src]="imgUrl" alt="The Logo"/>
+  <!--Property Binding : src-->
+  <!--Event Binding : click:  onClick is an event that need to be registered-->
+  <img [src]="imgUrl" alt="The Logo" (click)="onClick($event)"/>
 </div>
 
 <router-outlet></router-outlet>
