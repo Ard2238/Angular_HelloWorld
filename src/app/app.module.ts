@@ -10,6 +10,8 @@ import { AppRoutingModule } from './app-routing.module';
 // will automatically update this file to import and add them here.
 import { AppComponent } from './app.component';
 
+import { FormsModule } from '@angular/forms';
+
 // NgModule:  decorator ~~ annotations
 // Decorator: to provide additional metadata to specify 
 // the Components, the Services, the Imports, etc.. 
@@ -24,7 +26,8 @@ import { AppComponent } from './app.component';
   // Imports needed for application
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
 
   // Services like http
