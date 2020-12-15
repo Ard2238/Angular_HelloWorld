@@ -9,7 +9,8 @@
 </div>
 <div>
   <!--Two Way Binding Fiels-->
-  <input [(ngModel)] = "userName"/>
+  <input (input)="onInput($event)" [(ngModel)] = "userName"/>
+  <span class="error-output">{{this.nameError}}</span>
 </div>
 
 <router-outlet></router-outlet>
