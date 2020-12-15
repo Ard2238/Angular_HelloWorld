@@ -1,6 +1,10 @@
 <div>
   <!--Template Expression-->
   <h1>{{this.title}}{{1+1}}</h1>
+
+  <!--Property of the html is bound to the element "imgUrl"-->
+  <!--Property Binding-->
+  <img [src]="imgUrl" alt="The Logo"/>
 </div>
 
 <router-outlet></router-outlet>
